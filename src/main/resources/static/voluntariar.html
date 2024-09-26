@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/voluntariar.css">
+    <title>Quero ser voluntário</title>
+</head>
+<body>
+
+    <!-- Header Padrão -->
+    <header>
+        <div class="logo">
+          <img src="img/Logo_nova-removebg-preview.png" alt="Logo Mapeando Solidariedade">
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="feedback.html">Deixar feedback</a></li>
+            <li><a href="voluntarios.html">Meus trabalhos</a></li>
+          </ul>
+        </nav>
+        <div class="search-profile">
+          <input type="text" placeholder="Onde você está?">
+    
+          <div class="profile-icon">
+            <img src="img/Adriano-removebg-preview.png" alt="Perfil" class="perfil">
+          </div>
+        </div>
+      </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <div class="container">
+            <div class="left-section">
+                <div class="photo-upload">
+                    <div class="photo-circle">
+                        <img id="photo-preview" src="placeholder-image-icon.png" alt="Adicionar foto">
+                    </div>
+                    <label for="photo-input" class="custom-file-upload">Escolher Foto</label>
+                    <input type="file" id="photo-input" accept="image/*">
+                </div>
+            </div>
+   <div id="successMessage" style="display:none; color: green; font-weight: bold; margin-bottom: 15px;"></div>
+  
+            <div class="right-section">
+                <div class="form-container">
+                    <h2>Dados:</h2>
+                    <form id="guestForm"> <!-- Adicionado id ao formulário -->
+                        <input type="text" id="guestnome" placeholder="Nome" required>
+                        <input type="date" id="guestdatanascimento" placeholder="Data de Nascimento" required>
+                        <input type="text" id="guesttelefone" placeholder="Telefone" required>
+                        <input type="text" id="guesttiposanguineo" placeholder="TipoSanguineo" required>
+                        <button type="submit">Finalizar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/voluntariar.js"></script>
+</body>
+</html>

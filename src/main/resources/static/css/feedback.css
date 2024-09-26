@@ -1,0 +1,198 @@
+
+/* Reset básico para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E6F2E6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Cabeçalho da página */
+header {
+    width: 100%;
+    background-color: #1F4326;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do logotipo */
+.logo img {
+    height: 100px;
+    width: 120px;
+}
+
+/* Estilo da navegação (menu) */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #FFF;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: #a8f5b6 2px solid;
+    font-weight: bold;
+    background-color: #4C7353;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #3A6043;
+}
+
+/* Área de pesquisa e ícone de perfil */
+.search-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-profile input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.search-profile .search-button {
+    background-color: #4C7353;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.search-profile .profile-icon img {
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Container da seção de feedback */
+.container {
+    background-color: #EFF9EF;
+    border: 1px solid #D3E6D3;
+    border-radius: 10px;
+    padding: 30px;
+    width: 600px; /* Largura ajustada para maior espaço */
+    margin-top: 50px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombras suaves para destaque */
+}
+
+/* Título principal */
+h1 {
+    color: #6B8E23;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilo do rótulo (label) */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Estilo da área de texto (textarea) */
+textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #D3E6D3;
+    font-size: 16px;
+    resize: none;
+}
+
+/* Botão de envio */
+button {
+    margin-top: 20px;
+    background-color: #F2F9E6;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #6B8E23;
+}
+
+button:hover {
+    background-color: #D3E6D3;
+}
+
+/* Layout responsivo para telas menores */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .logo img {
+        height: 80px;
+        width: 100px;
+    }
+
+    .search-profile input {
+        width: 150px;
+    }
+
+    .container {
+        width: 90%; /* Ajusta a largura para telas menores */
+        padding: 20px;
+    }
+}
+
+/* Ajustes para telas muito pequenas (smartphones) */
+@media screen and (max-width: 480px) {
+    .logo img {
+        height: 60px;
+        width: 80px;
+    }
+
+    .container {
+        width: 100%; /* Utiliza toda a largura da tela */
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .search-profile input {
+        width: 120px;
+    }
+}

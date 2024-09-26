@@ -1,0 +1,193 @@
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #004d00;
+    color: white;
+}
+
+/* Logo */
+.logo img {
+    height: 100px;
+    width: 120px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: #FFF;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-family: Arial, sans-serif;
+    border: #a8f5b6 2px solid;
+    font-weight: bold;
+    background-color: #4C7353;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #3A6043;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.search-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-profile input {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.search-button {
+    background-color: #4C7353;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.perfil {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+}
+
+.left-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 800px;
+    height: 500px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.right-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.info {
+    background-color: #e8f5e9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 1.3rem;
+    border: #004d00 solid 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 700px;
+}
+
+.learn-more {
+    display: block;
+    margin-top: 10px;
+    color: #004d00;
+    text-decoration: none;
+}
+
+.volunteer-btn {
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ff6666;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.volunteer-btn:hover {
+    background-color: #ff3333;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+    }
+
+    .info {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+
+    .logo img {
+        height: 80px;
+        width: 100px;
+    }
+
+    .search-profile {
+        margin-top: 10px;
+    }
+
+    .left-section, .right-section {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+
+    .info {
+        font-size: 1rem;
+    }
+
+    .learn-more, .volunteer-btn {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,107 @@
+.nav {
+    background-color: aquamarine;
+    width: 100%;
+    display: flex;
+    font-size: 1.3rem;
+    text-align: center;
+    flex-wrap: wrap; /* Para melhor ajustar em telas menores */
+}
+
+.meio {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner {
+    width: 100%;
+    max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho da tela */
+    margin-top: 30px;
+    height: auto; /* Permite que a altura seja ajustada conforme a largura */
+}
+
+.campanha {
+    font-weight: bold;
+    font-size: 2.7rem;
+    display: flex;
+    margin-top: 50px;
+    margin-left: 5%; /* Use porcentagem para melhor adaptação */
+    justify-content: space-between;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    flex-wrap: wrap; /* Permite que o conteúdo quebre em telas menores */
+}
+
+.button {
+    background-color: #7C987C;
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255);
+    margin-right: 5%; /* Use porcentagem para melhor adaptação */
+    text-align: center;
+    margin-top: 50px;
+    border: #597259 solid 1px;
+    border-radius: 30px;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+  
+.carousel-container {
+    width: 90%; /* Ajuste a largura conforme necessário */
+    overflow: hidden;
+    margin: 0 auto; /* Centraliza o carrossel */
+}
+  
+.carousel-images {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+  
+.carousel-images img {
+    width: 450px;
+    height: 450px;
+    margin-right: 10px;
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+  
+.prev {
+    left: 10px;
+}
+  
+.next {
+    right: 10px;
+}
+
+/* Adicionando responsividade com media queries */
+@media (max-width: 768px) {
+    .campanha {
+        font-size: 2rem;
+        margin-left: 2%;
+    }
+
+    .carousel-images img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .button {
+        font-size: 1rem;
+    }
+}
